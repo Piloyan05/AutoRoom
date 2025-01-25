@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="logo" data-lang-key="logo"><a href="#"><img class="logo1" src="./assets/logo2 (2).jpg" alt=""></a></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" data-lang-key="partners">Գործընկերների համար</a></li>
+                    <li><a href="#" data-lang-key="cars">Մեքենաներ</a></li>
+                    <li><a href="#" data-lang-key="about">Մեր մասին</a></li>
+                    <li><a href="#" data-lang-key="contact">Կապ</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="language">
+                    <option value="hy">Հայերեն</option>
+                    <option value="ru">Русский</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    
+    <!-- hero.html -->
+    <section class="hero-section">
+        <div class="container-hero">
+            <h1 data-lang-key="hero_title">Մենք Գնում ենք Ձեր Մեքենան</h1>
+            <p data-lang-key="hero_description">Աճուրդներ ամբողջ աշխարհից, առաքում Հայաստան</p>
+            <a href="#" class="cta-btn" data-lang-key="cta_button">Սկսել հիմա</a>
+        </div>
+        <div class="container-image">
+
+        </div>
+    </section>
+    
+    <!-- about.html -->
+    <section class="about-section">
+        <div class="container">
+            <h2 data-lang-key="about_us_title">Մեր մասին</h2>
+            <p data-lang-key="about_us_description">Մենք մասնագիտանում ենք ավտոմեքենաների ձեռքբերման հարցում միջազգային աճուրդներից և դրանց առաքման հարցում Հայաստան:</p>
+            <div class="about-features">
+                <div class="feature">
+                    <img class="help" src="assets/DALL·E 2025-01-23 11.06.35 - Create an icon representing Quality with a golden star or badge symbolizing high standards. Use a sleek and modern design with gold and black color th.webp" alt="Quality">
+                    <h3>Բարձր որակ</h3>
+                    <p>Մենք ապահովում ենք միայն լավագույն մեքենաները:</p>
+                </div>
+                <div class="feature">
+                    <img class="help" src="assets/DALL·E 2025-01-23 11.06.40 - Create an icon representing Fast Delivery with a speeding truck or stopwatch symbolizing quick service. Use a sleek and modern design with gold and bl.webp" alt="Fast Delivery">
+                    <h3>Արագ առաքում</h3>
+                    <p>Մեքենաները արագ և ապահով տեղաբաշխվում են:</p>
+                </div>
+                <div class="feature">
+                    <img class="help" src="assets/DALL·E 2025-01-23 11.06.46 - Create an icon representing 24_7 Support with a headset or clock showing around-the-clock assistance. Use a sleek and modern design with gold and blac.webp" alt="Support">
+                    <h3>24/7 Աջակցություն</h3>
+                    <p>Մեր թիմը միշտ պատրաստ է պատասխանել Ձեր հարցերին:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- cars.html -->
+    <section class="cars-section">
+        <div class="container">
+            <h2 data-lang-key="cars_section_title">Մեքենաներ</h2>
+            <div class="carousel">
+                <button id="prevBtn" class="carousel-btn">&#10094;</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel-items">
+                        <div class="car-item">
+                            <h3 data-lang-key="car1_name">Toyota Camry</h3>
+                            <img src="assets/car1.jpg" alt="Car 1">
+                            <p data-lang-key="car1_price">$15,000</p>
+                        </div>
+                        <div class="car-item">
+                            <h3 data-lang-key="car2_name">BMW X5</h3>
+                            <img src="assets/car2.jpeg" alt="Car 2">
+                            <p data-lang-key="car2_price">$25,000</p>
+                        </div>
+                        <div class="car-item">
+                            <h3 data-lang-key="car3_name">Mercedes C-Class</h3>
+                            <img src="assets/car3.jpeg" alt="Car 3">
+                            <p data-lang-key="car3_price">$30,000</p>
+                        </div>
+                        <div class="car-item">
+                            <h3 data-lang-key="car4_name">BMW X5</h3>
+                            <img src="assets/car4.jpeg" alt="Car 2">
+                            <p data-lang-key="car4_price">$25,000</p>
+                        </div>
+                        <div class="car-item">
+                            <h3 data-lang-key="car5_name">Mercedes C-Class</h3>
+                            <img src="assets/car5.webp" alt="Car 3">
+                            <p data-lang-key="car5_price">$30,000</p>
+                        </div>
+                        <div class="car-item">
+                            <h3 data-lang-key="car5_name">Mercedes C-Class</h3>
+                            <img src="assets/car5.webp" alt="Car 3">
+                            <p data-lang-key="car5_price">$30,000</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="nextBtn" class="carousel-btn">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- contact.html -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 data-lang-key="contact_us_title">Կապ մեզ հետ</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Անուն" required>
+                <input type="email" name="email" placeholder="Էլ. հասցե" required>
+                <textarea name="message" placeholder="Հաղորդագրություն"></textarea>
+                <button type="submit">Ուղարկել</button>
+            </form>
+            <div class="contact-info">
+                <p>Հեռախոս: +374 123 456</p>
+                <p>Էլ. հասցե: info@autobuy.am</p>
+                <p>Հասցե: Երևան, Հայաստան</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer.html -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Auto Auction Armenia | Բոլոր իրավունքները պաշտպանված են</p>
+        </div>
+    </footer>
+    
+    <!-- styles.css -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</body>
+</html>
