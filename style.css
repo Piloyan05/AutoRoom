@@ -1,4 +1,15 @@
 /* General Styles */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -201,4 +212,23 @@ header {
 .help{
     width: 400px;
     height: 400px;
+}
+.see-all {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.see-all-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.see-all-btn:hover {
+    background: #FFD700;
 }

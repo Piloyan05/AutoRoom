@@ -1,0 +1,135 @@
+/* General Styles */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: gold;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header */
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo1 {
+    width: 200px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: gold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #FFD700;
+}
+
+.language-selector select {
+    background: black;
+    color: gold;
+    border: 1px solid gold;
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Filter Section */
+.filter-section {
+    padding: 20px 0;
+    background: #1a1a1a;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filters select, .filters input, .filters button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid gold;
+    border-radius: 5px;
+    background: black;
+    color: gold;
+}
+
+.filters button {
+    background: gold;
+    color: black;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background: #FFD700;
+}
+
+/* Cars Grid */
+.cars-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.car-item {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+}
+
+.car-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.car-item h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.car-item p {
+    font-size: 18px;
+}
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid gold;
+}

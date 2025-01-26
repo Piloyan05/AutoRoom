@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Cars</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+    <header>
+        <div class="container-header">
+           <a href="./index.html"><img class="logo1" src="./assets/logo2 (2).jpg" alt=""></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" data-lang-key="partners">Գործընկերների համար</a></li>
+                    <li><a href="#" data-lang-key="cars">Մեքենաներ</a></li>
+                    <li><a href="#" data-lang-key="about">Մեր մասին</a></li>
+                    <li><a href="#" data-lang-key="contact">Կապ</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="language">
+                    <option value="hy">Հայերեն</option>
+                    <option value="ru">Русский</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    
+    <section class="filter-section">
+        <div class="container">
+            <h2>Filter Cars</h2>
+            <div class="filters">
+                <select id="brand-filter">
+                    <option value="">Select Brand</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Mercedes">Mercedes</option>
+                </select>
+                <input type="number" id="min-price" placeholder="Min Price">
+                <input type="number" id="max-price" placeholder="Max Price">
+                <button onclick="filterCars()">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cars-list">
+        <div class="container">
+            <h2>All Cars</h2>
+            <div class="cars-grid" id="cars-grid">
+                <div class="car-item" data-brand="Toyota" data-price="15000">
+                    <h3>Toyota Camry</h3>
+                    <img src="assets/car1.jpg" alt="Toyota Camry">
+
+                    <p>Price: $15,000</p>
+                </div>
+                <div class="car-item" data-brand="BMW" data-price="25000">
+                    <h3>BMW X5</h3>
+                    <img src="assets/car2.jpeg" alt="BMW X5">
+                    <p>Price: $25,000</p>
+                </div>
+                <div class="car-item" data-brand="Mercedes" data-price="30000">
+                    <h3>Mercedes C-Class</h3>
+                    <img src="assets/car3.jpeg" alt="Mercedes C-Class">
+
+                    <p>Price: $30,000</p>
+                </div>
+                <div class="car-item" data-brand="Mercedes" data-price="30000">
+                    <h3 data-lang-key="car5_name">Mercedes C-Class</h3>
+                    <img src="assets/car5.webp" alt="Car 3">
+                    <p data-lang-key="car5_price">$30,000</p>
+                </div>
+                <div class="car-item" data-brand="Mercedes" data-price="30000">
+                    <h3 data-lang-key="car5_name">Mercedes C-Class</h3>
+                    <img src="assets/car5.webp" alt="Car 3">
+                    <p data-lang-key="car5_price">$30,000</p>
+                </div>
+                <div class="car-item" data-brand="Mercedes" data-price="30000">
+                    <h3 data-lang-key="car5_name">Mercedes C-Class</h3>
+                    <img src="assets/car5.webp" alt="Car 3">
+                    <p data-lang-key="car5_price">$30,000</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="contact-section">
+        <div class="container">
+            <h2 data-lang-key="contact_us_title">Կապ մեզ հետ</h2>
+            <div class="contact-info">
+                <p>Հեռախոս: +374 123 456</p>
+                <p>Էլ. հասցե: info@autobuy.am</p>
+                <p>Հասցե: Երևան, Հայաստան</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer.html -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Auto Auction Armenia | Բոլոր իրավունքները պաշտպանված են</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
